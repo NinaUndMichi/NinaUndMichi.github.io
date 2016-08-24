@@ -1,0 +1,1419 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #3d3536;
+  background-color: white;
+}
+body,
+html {
+  /* important */
+  height: 100vh;
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+/**
+ * Styling für den Header
+ * Wird verwendet in
+ **** Header.html
+ */
+.eitec .header {
+  padding: 10px 0px;
+  background: #999999;
+}
+@media (max-width: 1200px) {
+  .eitec .header {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .eitec .header {
+    padding: 10px 15px;
+  }
+}
+.eitec .header .header_inner {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  font-size: 15px;
+  color: white;
+}
+.eitec .header .header_inner .inner {
+  position: relative;
+}
+.eitec .header .header_inner .inner .eitec_title {
+  width: 70%;
+  float: left;
+}
+.eitec .header .header_inner .inner .eitec_cotact {
+  width: 30%;
+  float: left;
+  text-align: right;
+}
+.eitec .header .header_inner .inner .eitec_cotact span {
+  margin-left: 20px;
+}
+.eitec .header .header_inner .inner .links {
+  float: left;
+  width: 80%;
+}
+.eitec .header .header_inner .inner .links a {
+  float: right;
+  margin-left: 30px;
+  color: #00983b;
+  text-decoration: none;
+}
+.eitec .header .header_inner .inner .links a i {
+  margin-right: 10px;
+}
+.eitec .header .header_inner a:hover {
+  color: #00983b;
+  text-decoration: none;
+}
+.eitec .header .header_inner a:focus {
+  color: #00983b;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container {
+  min-height: 100vh;
+  background-image: url("images/opener_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .logo {
+  margin: 45px 0 0 45px;
+  float: left;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container {
+  background: white;
+  opacity: 0.8;
+  padding: 60px 0 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .top_text {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.3;
+  font-family: UniversLTStdBoldCn;
+}
+@media (max-width: 820px) {
+  .eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .top_text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .top_text {
+    font-size: 30px;
+  }
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .top_text.second_line {
+  font-size: 25px;
+  margin-top: 10px;
+}
+@media (max-width: 820px) {
+  .eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .top_text.second_line {
+    font-size: 15px;
+  }
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .top_text span {
+  color: #00983b;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .arrow {
+  margin-top: 50px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.top_container .eitec_content_inner .background_container .arrow i {
+  font-size: 40px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container {
+  background: linear-gradient(left, #ebebeb, #ffffff);
+  padding: 100px 0;
+}
+@media (max-width: 1250px) {
+  .eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner {
+  min-height: 1px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner .tor_container {
+  margin-right: -2%;
+  margin-top: 50px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner .tor_container .tor {
+  width: 23%;
+  float: left;
+  margin-right: 2%;
+  height: 300px;
+  position: relative;
+  padding: 10px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner .tor_container .tor img {
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner .tor_container .tor .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 37px;
+  color: #525252;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner .button_container {
+  text-align: center;
+  margin-top: 100px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container .eitec_content_inner .button_container button {
+  color: white;
+  background: black;
+  padding: 10px;
+  border: none;
+  font-family: UniversLTStdBoldCn;
+  font-size: 20px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey {
+  background: lightgrey;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget {
+  width: 33.3333%;
+  float: left;
+  padding: 15px;
+  /* max-height: 94px; */
+  /* text-align: center; */
+}
+@media (max-width: 550px) {
+  .eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget {
+    width: 100%;
+  }
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget .widget_inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 43%;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget .widget_inner img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget .widget_text {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1.2;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget .widget_text .heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: UniversLTStdBoldCn;
+  color: #00983b;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget .widget_text .sub_heading {
+  font-size: 20px;
+  color: grey;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.sub_container.grey .home_widget .widget_text .sub_text {
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: UniversLTStdBoldCn;
+  font-size: 18px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.contact_container {
+  background-image: url("images/Map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.contact_container .cotact_box {
+  line-height: 1.2;
+  color: white;
+  background: black;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  /* z-index: 99; */
+  top: 0;
+  padding: 35px;
+}
+@media (max-width: 985px) {
+  .eitec .shop_wrapper .home_wrapper .eitec_content_container.contact_container .cotact_box {
+    right: inherit;
+    left: 0;
+    top: 150px;
+  }
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.contact_container .cotact_box .company {
+  font-family: UniversLTStdBoldCn;
+  font-size: 30px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.contact_container .cotact_box .company_data {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 35px;
+}
+.eitec .shop_wrapper .home_wrapper .eitec_content_container.contact_container .cotact_box .company_data table tr td:first-child {
+  min-width: 80px;
+}
+.eitec .footer {
+  width: 100%;
+  float: left;
+}
+.eitec .footer .top_footer {
+  background: #5b5b5b;
+  padding: 40px 0px 10px;
+}
+.eitec .footer .top_footer .inner {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.eitec .footer .top_footer .inner .text_box {
+  width: 19%;
+  float: left;
+  margin-right: 1%;
+  line-height: 1.3;
+}
+@media (max-width: 1200px) {
+  .eitec .footer .top_footer .inner .text_box {
+    width: 49%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .eitec .footer .top_footer .inner .text_box {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+}
+.eitec .footer .top_footer .inner .long_text {
+  margin: 30px 0px;
+}
+@media (max-width: 991px) {
+  .eitec .footer .top_footer .inner .long_text {
+    padding: 0px 20px;
+  }
+}
+.eitec .footer .top_footer .inner p {
+  color: white;
+  font-size: 14px;
+}
+.eitec .footer .bottom_footer {
+  background: #3f3f3f;
+}
+.eitec .footer .bottom_footer .inner {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.eitec .footer .bottom_footer .inner p {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  color: white;
+}
+@media (max-width: 900px) {
+  .eitec .footer .bottom_footer .inner p {
+    width: 100%;
+  }
+}
+.eitec .footer .bottom_footer .inner p.right {
+  float: right;
+  width: 25%;
+  text-align: right;
+}
+@media (max-width: 900px) {
+  .eitec .footer .bottom_footer .inner p.right {
+    float: left;
+    text-align: left;
+  }
+}
+.eitec .shop_wrapper .products_wrapper .header_block {
+  position: relative;
+}
+.eitec .shop_wrapper .products_wrapper .header_block img {
+  width: 100%;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center {
+  height: 50%;
+  max-height: 250px;
+  max-width: 43%;
+  width: 600px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center.left {
+  left: 50px;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center.right {
+  right: 50px;
+}
+@media (max-width: 1000px) {
+  .eitec .shop_wrapper .products_wrapper .header_block .center {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+  }
+  .eitec .shop_wrapper .products_wrapper .header_block .center.left {
+    left: 0px;
+  }
+  .eitec .shop_wrapper .products_wrapper .header_block .center.right {
+    right: 0px;
+  }
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center h3 {
+  color: #00983b;
+  font-size: 50px;
+  font-weight: 800;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center h5 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center button,
+.eitec .shop_wrapper .products_wrapper .header_block .center .button {
+  color: white;
+  background: black;
+  padding: 10px;
+  border: none;
+  font-family: UniversLTStdBoldCn;
+  font-size: 20px;
+  width: 97%;
+  display: block;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center .row {
+  margin: 20px 0px;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center .col {
+  float: left;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center .col-10 {
+  width: 80%;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center .col-2 {
+  width: 20%;
+}
+.eitec .shop_wrapper .products_wrapper .header_block .center .col-6 {
+  width: 50%;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block {
+  position: relative;
+  margin-bottom: 30px;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block img {
+  width: 100%;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block h3 {
+  color: #00983b;
+  font-size: 55px;
+  font-weight: 800;
+  font-family: UniversLTStdBoldCn;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block h4 {
+  color: black;
+  font-size: 43px;
+  margin-right: 20px;
+  font-family: UniversLTStdlightCn;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block h5 {
+  color: black;
+  font-size: 29px;
+  margin-right: 20px;
+  font-family: UniversLTStdlightCn;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block .text_col {
+  padding: 0px 5px 5px 60px;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block .header_row {
+  margin-top: 55px;
+}
+.eitec .shop_wrapper .products_wrapper .alt_header_block button,
+.eitec .shop_wrapper .products_wrapper .alt_header_block .button {
+  color: white;
+  background: black;
+  padding: 10px;
+  border: none;
+  font-family: UniversLTStdBoldCn;
+  font-size: 20px;
+  width: 97%;
+  display: block;
+}
+.eitec .shop_wrapper .products_wrapper .content_block {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1440px) {
+  .eitec .shop_wrapper .products_wrapper .content_block {
+    margin: 0px 20px;
+  }
+}
+.eitec .shop_wrapper .products_wrapper .content_block .text_block {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  font-family: UniversLTStdLightCn;
+  font-size: 18px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper {
+  background: white;
+  margin-bottom: 35px;
+  /**********************************************************
+			 FilterBar
+			 **********************************************************/
+  /**********************************************************
+			 PaginationRow
+			 **********************************************************/
+  /**********************************************************
+			 ProductRow
+			 **********************************************************/
+}
+.eitec .shop_wrapper .produkt_block_wrapper img {
+  width: 100%;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .titel {
+  font-size: 20px;
+  font-weight: 800;
+  color: #05a85d;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .filter_bar {
+  background: #fafafa;
+  padding-bottom: 10px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .filter_bar .collapse_groupe .collapse_header {
+  color: black;
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+  padding: 13px 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cbcbcb+100 */
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #cbcbcb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcbcb', GradientType=0);
+  /* IE6-9 */
+}
+.eitec .shop_wrapper .produkt_block_wrapper .filter_bar .collapse_groupe .collapse_content {
+  padding-top: 15px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .filter_bar .collapse_groupe .collapse_content .collapse_content_groupe {
+  padding-left: 24px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .filter_bar .collapse_groupe .collapse_content .collapse_content_groupe .c_header {
+  font-weight: 800;
+  font-size: 21px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .filter_bar .collapse_groupe .collapse_content .collapse_spacer {
+  border-bottom: 2px solid #b7b7b7;
+  margin: 12px 10px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .pagination_row {
+  margin-bottom: 10px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .pagination_row .count {
+  float: left;
+  width: 200px;
+  font-size: 25px;
+  font-family: UniversLTStdBoldCn;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .pagination_row .pagination_container {
+  margin-left: 200px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .pagination_row .pagination_container .pagination_list {
+  text-align: center;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product {
+  margin-bottom: 15px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .keine_treffer {
+  height: 200px;
+  text-align: center;
+  display: table;
+  width: 100%;
+  border: 2px grey;
+  border-style: dashed;
+  border-radius: 9px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .keine_treffer .text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 31px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .row {
+  margin: 0px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .image_container {
+  padding: 5px;
+  background: #dbdbdb;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container {
+  padding-top: 5px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container .titel {
+  font-family: UniversLTStdBoldCn;
+  font-size: 27px;
+  font-weight: 800;
+  color: #05a85d;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container .table_container {
+  padding: 0px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container .table_container tr td:first-child {
+  font-family: UniversLTStdBoldCn;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container .table_container td {
+  padding: 0px;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container .button {
+  color: white;
+  background: black;
+  padding: 10px;
+  border: none;
+  font-family: UniversLTStdBoldCn;
+  font-size: 20px;
+  float: right;
+}
+.eitec .shop_wrapper .produkt_block_wrapper .product_row .product .content_container .text_container {
+  ont-size: 20px;
+}
+.eitec .shop_wrapper div[filter-kachel] .filter_directive {
+  padding-left: 15px;
+}
+.eitec .shop_wrapper div[filter-kachel] .filter_directive .repeat_filter_items {
+  margin-bottom: 5px;
+}
+.eitec .shop_wrapper div[filter-kachel] .filter_directive .repeat_filter_items .filter_input {
+  float: left;
+}
+.eitec .shop_wrapper div[filter-kachel] .filter_directive .repeat_filter_items .filter_text {
+  float: left;
+  margin-left: 11px;
+  font-size: 21px;
+}
+.eitec .mobile_header {
+  width: 100%;
+  background: white;
+  top: 0px;
+  margin-left: 0px;
+  position: fixed;
+  z-index: 2;
+  padding-top: 5px;
+}
+@media (min-width: 900px) {
+  .eitec .mobile_header {
+    display: none;
+  }
+}
+.eitec .mobile_header .row {
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+.eitec .mobile_header .row .menu {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  float: left;
+  font-size: 30px;
+  line-height: 30px;
+  color: #00983b;
+  border-radius: 3px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .eitec .mobile_header .row .menu {
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+  }
+}
+.eitec .mobile_header .row .image {
+  width: 50%;
+  margin-left: 25%;
+}
+.eitec .mobile_header .row .image img {
+  width: 100%;
+}
+.eitec .mobile_header .row .cart {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  float: right;
+  padding: 4px 0px 5px 4px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #00983b;
+  border-radius: 3px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .eitec .mobile_header .row .cart {
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+  }
+}
+.eitec .mobile_header .row.Entries {
+  max-height: 100vh;
+  overflow: scroll;
+  background-color: white;
+}
+.eitec .mobile_header .row.Entries .menuEntry {
+  width: 100%;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  font-size: x-large;
+  font-weight: 200;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .eitec .mobile_header .row.Entries .menuEntry {
+    font-size: 30px;
+  }
+  .eitec .mobile_header .row.Entries .menuEntry:hover {
+    background: none;
+  }
+}
+.eitec .mobile_header .row.Entries .menuEntry:hover {
+  background: #00983b;
+  text-decoration: none;
+  color: white;
+}
+.eitec .mobile_header .row input {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 26px;
+  padding-left: 5px;
+  background: #00983b;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .eitec .mobile_header .row input {
+    height: 100px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+.eitec .mobile_header_spacer {
+  width: 100%;
+  height: 75px;
+}
+@media (min-width: 900px) {
+  .eitec .mobile_header_spacer {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .eitec .mobile_header_spacer {
+    height: 40px;
+  }
+}
+.eitec .logo_container {
+  width: 30%;
+  max-width: 117px;
+  display: inline-block;
+  margin-left: 33%;
+}
+@media (min-width: 900px) {
+  .eitec .logo_container {
+    display: none;
+  }
+}
+.eitec .logo_container .container_inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.eitec .logo_container .container_inner .logo {
+  position: absolute;
+  width: 45%;
+  top: 0px;
+  height: 100%;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  margin: 10px 0px 10px 0px;
+}
+.eitec .shop_wrapper .produktdetails_wrapper {
+  margin-top: 100px;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .image_container {
+  width: 50%;
+  float: left;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .image_container .main_image {
+  margin-top: -25px;
+  width: 80%;
+  margin-left: 15%;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .image_container .lightbox_container {
+  margin-left: 15%;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .image_container .lightbox_container .lightbox_images {
+  max-width: 31%;
+  margin: 3px;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .image_container .lightbox_container video {
+  width: 100%;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .text_container {
+  width: 50%;
+  float: right;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .text_container .details_heading_container {
+  width: 70%;
+  float: left;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .text_container .icon_container {
+  width: 30%;
+  float: right;
+}
+.eitec .shop_wrapper .produktdetails_wrapper .text_container .icon_container img {
+  float: right;
+  margin-top: -25px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper {
+  background: #cbcbcb;
+  padding: 50px 0;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications {
+  background: white;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specifications_heading_left {
+  float: left;
+  width: 100%;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specifications_heading_left .eitec_sub_heading {
+  color: black;
+  font-size: 31px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specifications_heading_middle {
+  width: 67%;
+  margin-top: 20px;
+  float: right;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specifications_heading_middle img {
+  float: right;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table {
+  width: 100%;
+  margin-top: 50px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table .table_heading {
+  background: #505050;
+  color: white;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table .table_heading th {
+  padding: 10px;
+  font-weight: bold;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table tr {
+  line-height: 5px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table tr td {
+  padding: 10px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table tr td i {
+  color: #00993b;
+  padding-left: 20px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table tr .first_column {
+  font-weight: bold;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .specification_table table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .common_button.specifications {
+  float: left;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .common_button.specifications span {
+  text-align: left;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .circle_container {
+  float: right;
+  margin-right: 250px;
+  margin-top: 40px;
+}
+.eitec .shop_wrapper .technical_specifications_wrapper .technical_specifications .circle_container i {
+  color: #00993b;
+  margin-right: 5px;
+}
+.menu_wrapper {
+  margin-bottom: 5px;
+}
+.menu_wrapper .menu_bar {
+  background: #00983b;
+  background: linear-gradient(#56953d, #487d34);
+  box-shadow: 0px 3px 20px grey;
+}
+.menu_wrapper .menu_bar .menu_bar_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .menu_wrapper .menu_bar .menu_bar_inner {
+    padding: 0px 15px;
+  }
+}
+.menu_wrapper .menu_bar .menu_bar_inner .logo_eitec {
+  width: 15%;
+  float: left;
+  padding-top: 6px;
+}
+@media (max-width: 500px) {
+  .menu_wrapper .menu_bar .menu_bar_inner .logo_eitec {
+    width: 25%;
+  }
+}
+.menu_wrapper .menu_bar .menu_bar_inner .logo_eitec img {
+  width: 130px;
+}
+.menu_wrapper .menu_bar .menu_bar_inner .menu_text {
+  color: white;
+  font-size: 17px;
+  width: 40%;
+  float: left;
+  font-family: UniversLTStdBoldCn;
+  padding: 14px 45px;
+}
+.menu_wrapper .menu_bar .menu_bar_inner .menu_button {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+@media (max-width: 1250px) {
+  .menu_wrapper .menu_bar .menu_bar_inner .menu_button {
+    text-align: left;
+  }
+}
+.menu_wrapper .menu_bar .menu_bar_inner .menu_button img {
+  cursor: pointer;
+}
+.menu_wrapper .menu_flex_button {
+  position: fixed;
+  z-index: 99;
+  top: 35px;
+  right: 0;
+}
+@media (max-width: 900px) {
+  .menu_wrapper .menu_flex_button {
+    display: none;
+  }
+}
+.menu_wrapper .menu_flex_button.menu_window {
+  display: none;
+}
+.menu_wrapper .menu_window_display {
+  display: none;
+  position: fixed;
+  top: 35px;
+  right: 0;
+  background: white;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  z-index: 99;
+}
+.menu_wrapper .menu_window_display.menu_window {
+  display: block;
+}
+@media (max-width: 900px) {
+  .menu_wrapper .menu_window_display.menu_window {
+    display: none;
+  }
+}
+.menu_wrapper .menu_window_display.menu_window .menu_window_inner .close_icon {
+  text-align: right;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.menu_wrapper .menu_window_display.menu_window .menu_window_inner .close_icon img {
+  height: 20px;
+}
+.menu_wrapper .menu_window_display.menu_window .menu_window_inner ul {
+  padding: 20px 35px;
+}
+.menu_wrapper .menu_window_display.menu_window .menu_window_inner ul li {
+  margin-bottom: 20px;
+}
+.menu_wrapper .menu_window_display.menu_window .menu_window_inner ul li a {
+  color: #58954d;
+  font-family: UniversLTStdLightCn;
+}
+.menu_wrapper .menu_window_display.menu_window .menu_window_inner .search_container input[type="search"] {
+  border: none;
+  background: #ededed;
+  font-size: 18PX;
+  width: 100%;
+  padding: 15px 10px 10px 10px;
+  font-weight: bold;
+}
+.eitec .kontakt_wrapper {
+  background: #e1e1e1;
+  padding: 50px 50px 0 50px;
+}
+.eitec .kontakt_wrapper .text_container .text_left {
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+}
+.eitec .kontakt_wrapper .text_container .text_right {
+  width: 50%;
+  float: right;
+  padding-right: 20px;
+}
+.eitec .kontakt_wrapper .text_container .text_right .green_links {
+  color: #00993b;
+}
+.eitec .kontakt_wrapper .partner_container {
+  margin-top: 40px;
+}
+.eitec .kontakt_wrapper .partner_container img {
+  border-radius: 50%;
+  border: 10px #d2d2d2 solid;
+  margin-top: 30px;
+  float: left;
+  margin-left: 50px;
+}
+.eitec .kontakt_wrapper .partner_container .name_container {
+  margin: 40px 0 0 40px;
+  float: left;
+}
+.eitec .kontakt_wrapper .partner_container .name_container .heading_name {
+  font-size: 30px;
+  font-family: UniversLTStdBoldCn;
+  color: #00983b;
+  font-weight: bold;
+}
+.eitec .kontakt_wrapper .partner_container .name_container .heading_role {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.eitec .kontakt_wrapper .partner_container .name_container .contact_dates {
+  color: #888c91;
+}
+.eitec .kontakt_wrapper .contact_form_container {
+  margin-top: 70px;
+}
+.eitec .kontakt_wrapper .contact_form_container form {
+  width: 100%;
+}
+.eitec .kontakt_wrapper .contact_form_container form input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  padding: 5px;
+}
+.eitec .kontakt_wrapper .contact_form_container form label {
+  color: #a7a7a7;
+  font-family: UniversLTStdLightCn;
+  margin-top: 5px;
+}
+.eitec .kontakt_wrapper .contact_form_container form select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  height: 45px;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.eitec .kontakt_wrapper .contact_form_container form textarea {
+  border: none;
+}
+.eitec .kontakt_wrapper .contact_form_container form .has-error {
+  border: solid 3px #bd0000;
+}
+.eitec .kontakt_wrapper .contact_form_container form .form-title {
+  color: #3e3e3e;
+  font-family: UniversLTStdBoldCn;
+  font-size: 20px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .input_container {
+  border-bottom: 1px solid black;
+  padding-bottom: 40px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .input_container .row {
+  margin-bottom: 10px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container {
+  margin-top: 40px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column #checkbox {
+  border-radius: 0;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column .checkbox_heading {
+  margin: 10px 0;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column input {
+  visibility: hidden;
+  position: absolute;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column label {
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 20px 25px 0px 40px;
+  margin: 0px auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column ul li {
+  color: #AAAAAA;
+  position: relative;
+  width: 100%;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column .container ul {
+  list-style: none;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column ul li .check {
+  display: block;
+  position: absolute;
+  border: 1px solid #AAAAAA;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  left: 10px;
+  z-index: 5;
+  background: #999999;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 7px;
+  width: 7px;
+  top: 5px;
+  left: 5px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column input:checked ~ .check {
+  background: #999999;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column input:checked ~ .check::before {
+  background: #000000;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column input:checked ~ label {
+  color: #000000;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column.left {
+  float: left;
+  margin-right: 40px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column.middle {
+  float: left;
+  margin-right: 40px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column.right {
+  float: left;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column.right .box_container {
+  float: left;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_container .request_column.right .box_container.left {
+  margin-right: 50px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_subject {
+  margin-top: 40px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .request_text {
+  margin-top: 40px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .attachment_container .attachment_upload {
+  margin-top: 30px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .attachment_container .attachment_upload button {
+  background: #999999;
+  color: white;
+}
+.eitec .kontakt_wrapper .contact_form_container form .agbs {
+  margin-top: 50px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .agbs input {
+  margin-top: 20px;
+}
+.eitec .kontakt_wrapper .contact_form_container form .common_button {
+  margin-bottom: 20px;
+  width: 100%;
+}
+@font-face {
+  font-family: UniversLTStdBoldCn;
+  src: url("/libs/fonts/UniversLTStd-BoldCn.otf");
+}
+@font-face {
+  font-family: UniversLTStdLightCn;
+  src: url("/libs/fonts/UniversLTStd-LightCn.otf");
+}
+.clear {
+  clear: both;
+}
+button:focus {
+  outline: 0;
+}
+a:focus {
+  outline: 0;
+}
+body {
+  position: relative;
+}
+.eitec .shop_wrapper {
+  font-family: UniversLTStdLightCn;
+  width: 100%;
+  float: left;
+}
+.eitec .common_button {
+  background: #303030;
+  color: white;
+  padding: 10px;
+  width: 220px;
+  font-weight: bold;
+  margin-top: 40px;
+  float: right;
+  border: 0;
+}
+.eitec .common_button span {
+  float: left;
+  margin-top: 4px;
+}
+.eitec .common_button img {
+  float: right;
+}
+.eitec .black_sub_heading {
+  font-weight: bold;
+}
+.eitec .green_span {
+  color: #00993b;
+}
+.eitec .eitec_content_container {
+  position: relative;
+}
+.eitec .eitec_content_container .eitec_content_inner {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.eitec .eitec_content_container .eitec_content_inner .eitec_primary_heading {
+  font-family: UniversLTStdBoldCn;
+  color: #00983b;
+  font-size: 50px;
+  font-weight: bold;
+}
+.eitec .eitec_content_container .eitec_content_inner .eitec_sub_heading {
+  color: black;
+  font-size: 31px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.eitec .eitec_content_container .eitec_content_inner .eitec_text_container {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 40px;
+}
+.eitec .eitec_content_container .eitec_content_inner .eitec_text_container .eitec_text_collum1 {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .eitec .eitec_content_container .eitec_content_inner .eitec_text_container .eitec_text_collum1 {
+    width: 100%;
+  }
+}
+.eitec .eitec_content_container .eitec_content_inner .eitec_text_container .eitec_text_collum2 {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+@media (max-width: 600px) {
+  .eitec .eitec_content_container .eitec_content_inner .eitec_text_container .eitec_text_collum2 {
+    width: 100%;
+    padding-left: 0px;
+  }
+}

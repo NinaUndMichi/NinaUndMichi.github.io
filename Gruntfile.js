@@ -15,12 +15,6 @@ module.exports = function (grunt) {
             options: {
                 separator: ';\r\n \n'
             },
-            backend: {
-                src: [
-                    'dev_backend/src/js/**/*.js'
-                ],
-                dest: 'build/public/backend.js'
-            },
             frontend: {
                 src: [
                     'dev_frontend/src/js/app.js',
@@ -47,66 +41,6 @@ module.exports = function (grunt) {
                 dest: 'build/public/libs/',
                 expand: true
             },
-            srvconf: {
-                cwd: 'server/configuration',
-                src: '**/*',
-                dest: 'build/configuration',
-                expand: true
-            },
-            srvcont: {
-                cwd: 'server/controllers',
-                src: '**/*',
-                dest: 'build/controllers',
-                expand: true
-            },
-            helpers: {
-                cwd: 'server/helpers',
-                src: '**/*',
-                dest: 'build/helpers',
-                expand: true
-            },
-            models: {
-                cwd: 'server/models',
-                src: '**/*',
-                dest: 'build/models',
-                expand: true
-            },
-            passport: {
-                cwd: 'server/passport',
-                src: '**/*',
-                dest: 'build/passport',
-                expand: true
-            },
-            routes: {
-                cwd: 'server/routes',
-                src: '**/*',
-                dest: 'build/routes',
-                expand: true
-            },
-            views: {
-                cwd: 'server/views',
-                src: '**/*',
-                dest: 'build/views',
-                expand: true
-            },
-            serverJs: {
-                cwd: 'server/',
-                src: 'server.js',
-                dest: 'build',
-                expand: true
-            },
-            webconfig: {
-                cwd: 'server/',
-                src: 'web.config',
-                dest: 'build',
-                expand: true
-            },
-            packson: {
-                cwd: 'server/',
-                src: 'package.json',
-                dest: 'build',
-                expand: true
-            }
         },
         /**************************************************************************************************
          * less
@@ -125,50 +59,6 @@ module.exports = function (grunt) {
                 files: {
                     "build/public/frontend.css": "dev_frontend/src/less/common.less"
                 }
-            },
-            backend: {
-                options: {
-                    paths: ["styles"],
-                    relative: true
-                },
-                files: {
-                    "build/public/backend.css": "dev_backend/src/less/common.less"
-                }
-            }
-        },
-        /**************************************************************************************************
-         * ngtemplates
-         * Erstellen einen Cache aus HTML Files
-         *
-         * WICHTIG!!!!!!!!!!
-         * Der Name der Tasks in ngtemplates  muss mit dem Namen
-         * des Root Moduls der Angular übereinstimmen.
-         *
-         * z.B.
-         * * * Gruntfile.js
-         * ngtemplates:{
-         *      schnitzel:{}
-         * }
-         *
-         * * * app.js
-         *  angular.module('schnitzel',[]);
-         **************************************************************************************************/
-        ngtemplates: {
-            eitec: {
-                cwd: 'dev_frontend/src/html/',
-                src: '**/*.html',
-                dest: 'build/public/templates.js',
-                options: {
-                    prefix: 'html'
-                }
-            },
-            backend: {
-                cwd: 'dev_backend/src/html',
-                src: '**/*.html',
-                dest: 'build/public/backend_templates.js',
-                options: {
-                    prefix: 'html'
-                }
             }
         },
         /**************************************************************************************************
@@ -178,13 +68,7 @@ module.exports = function (grunt) {
         jshint: {
             files: [
                 'Gruntfile.js',
-                'dev_frontend/src/**/*.js',
-                'dev_backend/src/**/*.js',
-                'server/configuration/**/*',
-                'server/controllers/**/*',
-                'server/helpers/**/*',
-                'server/models/**/*',
-                'server/routes/**/*'
+                'dev_frontend/src/**/*.js'
             ]
         },
         /**************************************************************************************************
@@ -196,10 +80,6 @@ module.exports = function (grunt) {
             frontjs: {
                 files: ['dev_frontend/src/js/**/*.js'],
                 tasks: ['concat:frontend', 'notify:watch']
-            },
-            backjs: {
-                files: ['dev_backend/src/js/**/*.js'],
-                tasks: ['concat:backend', 'notify:watch']
             },
             less: {
                 files: ['dev_frontend/src/less/*.less', 'dev_backend/src/less/*.less'],
@@ -226,12 +106,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean',
-        'concat:backend',
         'concat:frontend',
         'copy',
         'less:frontend',
-        'less:backend',
-        'ngtemplates'
     ]);
 
     grunt.registerTask('hint', ['jshint']);
