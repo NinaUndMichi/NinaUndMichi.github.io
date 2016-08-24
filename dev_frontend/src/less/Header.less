@@ -1,0 +1,71 @@
+//Header.less
+/**
+ * Styling für den Header
+ * Wird verwendet in
+ **** Header.html
+ */
+.@{name-space} {
+    .header {
+	    padding: 10px 0px;
+		background: rgb(153, 153, 153);
+		@media(max-width: 1200px){
+			display: none;
+		}
+	    @media(max-width: 900px){
+			padding: 10px 15px;
+        }
+	    .header_inner{
+	    	max-width: 1200px;
+		    margin: auto;
+		    position: relative;
+			font-size:15px;
+			color: white;
+		    .inner{
+			    position: relative;
+				.eitec_title{
+					width:70%;
+					float: left;
+				}
+				.eitec_cotact{
+					width:30%;
+					float: left;
+					text-align: right;
+					span{
+						margin-left:20px;
+					}
+				}
+			    //.navlinks{
+				 //   position: absolute;
+				 //   bottom: 0px;
+				 //   right: 0px;
+				 //   a {
+    			//		margin-left: 10px;
+					//    margin-left: 30px;
+					//	font-size: 14px;
+					//	text-decoration: none;
+				 //   }
+			    //}
+			    .links{
+			    	float: left;
+    				width: 80%;
+    				a {
+    					float: right;
+    					margin-left: 30px;
+    					color: @eitec_primary_color;
+    					text-decoration: none;
+    					i{
+    						margin-right: 10px;
+    					}
+    				}
+			    }
+		    }
+		    a:hover{
+		    	color: @eitec_primary_color;
+		    	text-decoration: none;
+		    }
+		    a:focus{
+		    	color: @eitec_primary_color;
+		    }
+	    }
+    }
+}

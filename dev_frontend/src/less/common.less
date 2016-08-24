@@ -1,0 +1,126 @@
+//common.less
+@import url('reset.less');
+@import url('Header.less');
+@import url('Home.less');
+@import url('Footer.less');
+@import url('ProduktSeiten.less');
+@import url('ProduktBlock.less');
+@import url('MobileHeader.less');
+@import url('Productdetails.less');
+@import url('Menu.less');
+@import url('Kontakt.less');
+
+@name-space: eitec;
+@eitec_primary_color: rgb(0, 152, 59);
+
+@font-face {
+	font-family: UniversLTStdBoldCn;
+	src: url("/libs/fonts/UniversLTStd-BoldCn.otf");
+}
+
+@font-face {
+	font-family: UniversLTStdLightCn;
+	src: url("/libs/fonts/UniversLTStd-LightCn.otf");
+}
+
+.clear {
+	clear: both;
+}
+
+button:focus {
+	outline: 0;
+}
+
+a:focus {
+	outline: 0;
+}
+body{
+	position: relative;
+}
+
+
+.@{name-space} {
+	.shop_wrapper {
+		font-family: UniversLTStdLightCn;
+		width: 100%;
+		float: left;
+	}
+
+	.common_button{
+		background: rgb(48,48,48);
+		color: white;
+		padding: 10px;
+		width: 220px;
+		font-weight: bold;
+		margin-top: 40px;
+		float: right;
+		border: 0;
+
+
+		span{
+			float: left;
+			margin-top: 4px;
+		}
+
+		img{
+			float: right;
+		}
+
+	}
+
+	.black_sub_heading{
+		font-weight: bold;
+
+	}
+
+	.green_span{
+		color: rgb(0, 153, 59);
+	}
+
+	.eitec_content_container {
+		position: relative;
+		.eitec_content_inner {
+			max-width: 1200px;
+			position: relative;
+			margin: 0 auto;
+			min-height: 100vh;
+			.eitec_primary_heading {
+				font-family: UniversLTStdBoldCn;
+				color: @eitec_primary_color;
+				font-size: 50px;
+				font-weight: bold;
+			}
+			.eitec_sub_heading {
+				color: black;
+				font-size: 31px;
+				font-weight: 500;
+				margin-top: 5px
+			}
+			.eitec_text_container {
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 1.2;
+				margin-top: 40px;
+				.eitec_text_collum1 {
+					width: 50%;
+					float: left;
+					padding-right: 20px;
+					@media(max-width:600px){
+						width:100%;
+					}
+				}
+				.eitec_text_collum2 {
+					width: 50%;
+					float: left;
+					padding-left: 20px;
+					@media(max-width:600px){
+						width:100%;
+						padding-left:0px;
+					}
+				}
+			}
+
+
+		}
+	}
+}

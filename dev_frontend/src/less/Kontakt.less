@@ -1,0 +1,249 @@
+.@{name-space} {
+	.kontakt_wrapper {
+		background: rgb(225, 225, 225);
+		padding: 50px 50px 0 50px;
+
+		.text_container {
+			.text_left {
+				width: 50%;
+				float: left;
+				padding-right: 30px;
+			}
+			.text_right {
+				width: 50%;
+				float: right;
+				padding-right: 20px;
+
+				.green_links {
+					color: rgb(0, 153, 59);
+				}
+			}
+		}
+
+		.partner_container {
+			margin-top: 40px;
+			img {
+				border-radius: 50%;
+				border: 10px rgb(210, 210, 210) solid;
+				margin-top: 30px;
+				float: left;
+				margin-left: 50px;
+			}
+
+			.name_container {
+				margin: 40px 0 0 40px;
+				float: left;
+
+				.heading_name {
+					font-size: 30px;
+					font-family: UniversLTStdBoldCn;
+					color: @eitec_primary_color;
+					font-weight: bold;
+				}
+
+				.heading_role {
+					color: black;
+					font-size: 25px;
+					font-weight: 500;
+					margin-top: 5px
+				}
+
+				.contact_dates {
+					color: rgb(136, 140, 145)
+				}
+			}
+
+		}
+
+		.contact_form_container {
+			margin-top: 70px;
+
+			form {
+				width: 100%;
+				input {
+					width: 100%;
+					height: 45px;
+					border: none;
+					padding: 5px;
+
+				}
+				label {
+					color: #a7a7a7;
+					font-family: UniversLTStdLightCn;
+					margin-top: 5px;
+				}
+				select {
+					width: 100%;
+					padding: 5px;
+					font-size: 16px;
+					height: 45px;
+					border: none;
+					border-radius: 0;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
+				}
+				textarea {
+					border: none;
+				}
+				.has-error{
+					border: solid 3px #bd0000;
+				}
+				.form-title {
+					color: #3e3e3e;
+					font-family: UniversLTStdBoldCn;
+					font-size: 20px;
+				}
+				.input_container {
+					border-bottom: 1px solid black;
+					padding-bottom: 40px;
+					.row {
+						margin-bottom: 10px;
+					}
+				}
+
+				.request_container {
+
+					margin-top: 40px;
+					.request_column {
+
+						#checkbox {
+							border-radius: 0;
+						}
+						.checkbox_heading {
+							margin: 10px 0;
+						}
+						input {
+							visibility: hidden;
+							position: absolute;
+
+						}
+						label {
+							display: block;
+							position: relative;
+							font-weight: 300;
+							font-size: 1.35em;
+							padding: 20px 25px 0px 40px;
+							margin: 0px auto;
+							z-index: 9;
+							cursor: pointer;
+							-webkit-transition: all 0.25s linear;
+						}
+
+						ul li {
+							color: #AAAAAA;
+							position: relative;
+							width: 100%;
+						}
+
+						.container ul {
+							list-style: none;
+						}
+
+						ul li .check {
+							display: block;
+							position: absolute;
+							border: 1px solid #AAAAAA;
+							border-radius: 100%;
+							height: 20px;
+							width: 20px;
+							top: 20px;
+							left: 10px;
+							z-index: 5;
+							background: rgb(153, 153, 153);
+							transition: border .25s linear;
+							-webkit-transition: border .25s linear;
+						}
+
+						ul li .check::before {
+							display: block;
+							position: absolute;
+							content: '';
+							border-radius: 100%;
+							height: 7px;
+							width: 7px;
+							top: 5px;
+							left: 5px;
+							margin: auto;
+							transition: background 0.25s linear;
+							-webkit-transition: background 0.25s linear;
+						}
+
+						input:checked ~ .check {
+							//border: 5px solid #000000;
+							background: rgb(153, 153, 153);
+						}
+
+						input:checked ~ .check::before {
+							background: #000000;
+						}
+
+						input:checked ~ label {
+							color: #000000;
+						}
+					}
+					.request_column.left {
+						float: left;
+						margin-right: 40px;
+					}
+					.request_column.middle {
+						float: left;
+						margin-right: 40px;
+					}
+					.request_column.right {
+						float: left;
+
+						.box_container {
+							float: left;
+							&.left {
+								margin-right: 50px;
+							}
+						}
+
+					}
+				}
+
+				.request_subject {
+					margin-top: 40px;
+				}
+				.request_text {
+					margin-top: 40px;
+
+				}
+
+				.attachment_container {
+
+					.attachment_upload {
+						margin-top: 30px;
+						button {
+							background: rgb(153, 153, 153);
+							color: white;
+						}
+					}
+
+				}
+
+				.agbs {
+					margin-top: 50px;
+					input {
+						margin-top: 20px;
+					}
+				}
+				.common_button {
+					margin-bottom: 20px;
+					width: 100%;
+				}
+
+				//.button_area {
+				//	background: #999999;
+				//	padding: 20px;
+				//	margin-top: 20px;
+				//	margin-left: -75px;
+				//	margin-right: -75px;
+				//
+				//
+				//}
+			}
+		}
+	}
+}

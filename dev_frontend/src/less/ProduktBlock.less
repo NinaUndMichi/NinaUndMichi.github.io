@@ -1,0 +1,164 @@
+.@{name-space} {
+	.shop_wrapper {
+		.produkt_block_wrapper {
+			background: white;
+			margin-bottom: 35px;
+			//border: solid 1px;
+			img {
+				width: 100%;
+			}
+			.titel {
+				font-size: 20px;
+				font-weight: 800;
+				color: #05a85d;
+			}
+			/**********************************************************
+			 FilterBar
+			 **********************************************************/
+			.filter_bar {
+				background: rgb(250, 250, 250);
+				padding-bottom: 10px;
+				.collapse_groupe {
+					.collapse_header {
+						color: black;
+						font-weight: 700;
+						font-size: 27px;
+						text-align: center;
+						padding: 13px 0px;
+
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cbcbcb+100 */
+						background: #ffffff; /* Old browsers */
+						background: -moz-linear-gradient(top, #ffffff 0%, #cbcbcb 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top, #ffffff 0%, #cbcbcb 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom, #ffffff 0%, #cbcbcb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcbcb', GradientType=0); /* IE6-9 */
+
+					}
+					.collapse_content {
+						//padding-left: 24px;
+						padding-top: 15px;
+						.collapse_content_groupe {
+							padding-left: 24px;
+							.c_header {
+								font-weight: 800;
+								font-size: 21px;
+							}
+
+						}
+						.collapse_spacer {
+							border-bottom: 2px solid #b7b7b7;
+							margin: 12px 10px;
+						}
+					}
+				}
+			}
+			/**********************************************************
+			 PaginationRow
+			 **********************************************************/
+			.pagination_row {
+				margin-bottom: 10px;
+				.count {
+					float: left;
+					width: 200px;
+					font-size: 25px;
+					font-family: UniversLTStdBoldCn;
+
+				}
+				.pagination_container {
+					margin-left: 200px;
+					.pagination_list {
+						text-align: center;
+					}
+				}
+
+			}
+
+			/**********************************************************
+			 ProductRow
+			 **********************************************************/
+			.product_row {
+				.product {
+					.keine_treffer {
+						height: 200px;
+						text-align: center;
+						display: table;
+						width: 100%;
+						border: 2px grey;
+						border-style: dashed;
+						border-radius: 9px;
+						.text {
+							display: table-cell;
+							vertical-align: middle;
+							font-size: 31px;
+						}
+					}
+					.row {
+						margin: 0px;
+					}
+					margin-bottom: 15px;
+					.image_container {
+						padding: 5px;
+						background: rgba(219, 219, 219, 1);
+					}
+					.content_container {
+						padding-top: 5px;
+						.titel {
+							font-family: UniversLTStdBoldCn;
+							font-size: 27px;
+							font-weight: 800;
+							color: #05a85d;
+						}
+						.table_container {
+							padding: 0px;
+							tr td:first-child {
+								font-family: UniversLTStdBoldCn;
+							}
+
+							td {
+								padding: 0px;
+							}
+						}
+						.button {
+							color: white;
+							background: black;
+							padding: 10px;
+							border: none;
+							font-family: UniversLTStdBoldCn;
+							font-size: 20px;
+							float: right;
+						}
+						.text_container {
+							ont-size: 20px;
+						}
+
+					}
+				}
+
+			}
+		}
+	}
+}
+
+//Styling FilterKachel: Sollte noch in eigenes less file
+.@{name-space} {
+	.shop_wrapper {
+		div[filter-kachel] {
+			.filter_directive {
+				padding-left: 15px;
+				.repeat_filter_items {
+					margin-bottom: 5px;
+					.filter_input {
+						float: left;
+					}
+					.filter_text {
+						float: left;
+						margin-left: 11px;
+						font-size: 21px;
+					}
+
+				}
+			}
+
+		}
+	}
+}

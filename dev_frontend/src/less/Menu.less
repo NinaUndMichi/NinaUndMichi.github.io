@@ -1,0 +1,105 @@
+.menu_wrapper{
+  margin-bottom:5px;
+  .menu_bar{
+    background: @eitec_primary_color;
+    background: linear-gradient(rgb(86, 149, 61), rgb(72, 125, 52));
+    box-shadow: 0px 3px 20px grey;
+    .menu_bar_inner{
+      max-width:1200px;
+      margin:0 auto;
+      @media(max-width:1250px){
+        padding:0px 15px;
+      }
+      .logo_eitec{
+        width: 15%;
+        float: left;
+        padding-top: 6px;
+        @media(max-width:500px) {
+          width:25%;
+        }
+        img{
+          width:130px;
+        }
+      }
+      .menu_text{
+        color: white;
+        font-size: 17px;
+        width: 40%;
+        float: left;
+        font-family: UniversLTStdBoldCn;
+        padding: 14px 45px;
+      }
+      .menu_button{
+        width: 20%;
+        float: right;
+        text-align: right;
+        @media(max-width:1250px){
+          text-align: left;
+        }
+        img{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .menu_flex_button{
+    position: fixed;
+    z-index:99;
+    top:35px;
+    right:0;
+    @media(max-width:900px){
+      display: none;
+    }
+    &.menu_window{
+      display: none;
+    }
+  }
+  .menu_window_display{
+    display: none;
+    position: fixed;
+    top: 35px;
+    right: 0;
+    background: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight:bold;
+    z-index: 99;
+    &.menu_window{
+      display: block;
+      @media(max-width:900px){
+        display: none;
+      }
+      .menu_window_inner{
+        .close_icon{
+          text-align: right;
+          margin-bottom:15px;
+          cursor: pointer;
+          img{
+            height:20px;
+          }
+        }
+        ul{
+          padding: 20px 35px;
+          li{
+            margin-bottom: 20px;
+            a{
+              color: rgb(88, 149, 77);
+              font-family: UniversLTStdLightCn;
+            }
+          }
+        }
+        .search_container{
+          input[type="search"]{
+            border:none;
+            background: rgb(237, 237, 237);
+            font-size: 18PX;
+            width: 100%;
+            padding: 15px 10px 10px 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+}
