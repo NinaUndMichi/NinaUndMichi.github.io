@@ -17,6 +17,14 @@ angular.module('allControllers', [
 // cfMainCtrl.js ----------------------------------------------------------
 angular.module('cfMainCtrl', []).controller('cfMainCtrl', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
 
+    $scope.login = function(pw){
+        if(pw && pw =="06082016"){
+            $scope.loginStatus= true;
+        }else{
+            $scope.errorMessage = "Passwort falsch."
+        }
+    };
+
     $scope.files = [
         'https://saschablob.blob.core.windows.net/images/N%2BM%20Hochzeit-1.jpg',
         'https://saschablob.blob.core.windows.net/images/N%2BM%20Hochzeit-10.jpg',

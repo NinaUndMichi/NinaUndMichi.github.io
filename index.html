@@ -105,21 +105,59 @@
         ul{
             list-style-type: none;
         }
+
+        .login{
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            background: #8a8a8a;
+            left: 0px;
+            right: 0px;
+            z-index: 9999;
+        }
+
+        .container{
+            width: 340px;
+        }
+        .errorMessage{
+            color: #940505;
+            font-size: 19px;
+            margin-top: 7px;
+            margin-bottom: 16px;
+        }
     </style>
 </head>
 <body ng-controller="cfMainCtrl" class="nimi">
-    <div class="title">Nina & Michi</div>
-    <div class="subtitle">06.08.2016</div>
-    <a class="download" href="https://www.dropbox.com/sh/s0rg334qlynssd0/AACeBOMVe_vvgjMt9fK8Fqjoa?dl=0"><i
-            aria-hidden="true" style="margin-right: 12px" class="fa fa-cloud-download"></i><i>Download</i>
-    </a>
-    <div class="img-container"><img src="header.jpg" class="header-img"></div>
+    <div class="login" ng-if="!loginStatus">
+        <div class="container">
+            <h1>Nina & Michi</h1>
+            <p class="lead">Bitte Passwort eingeben.</p><br/>
+            <form role="form" ng-submit="login(password)" style="max-width: 300px;">
+                <div class="form-group">
+                    <input type="password" ng-model="password" name="password" placeholder="Passwort" class="form-control"/>
+                </div>
+                <div class="errorMessage" ng-if="errorMessage">{{errorMessage}}</div>
+                <input type="submit" value="Login" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
 
-    <ul class="flowGrid" ng-flow-grid="homePageGrid" min-item-width="300">
-        <li class="flowGridItem" ng-repeat="item in files">
-            <a href=""><img ng-src="{{item}}"></a>
-        </li>
-    </ul>
+    <div class="page" ng-if="loginStatus">
+        <div class="title">Nina & Michi</div>
+        <div class="subtitle">06.08.2016</div>
+        <a class="download" href="https://www.dropbox.com/sh/s0rg334qlynssd0/AACeBOMVe_vvgjMt9fK8Fqjoa?dl=0"><i
+                aria-hidden="true" style="margin-right: 12px" class="fa fa-cloud-download"></i><i>Download</i>
+        </a>
+        <div class="img-container"><img src="header.jpg" class="header-img"></div>
+
+        <ul class="flowGrid" ng-flow-grid="homePageGrid" min-item-width="300">
+            <li class="flowGridItem" ng-repeat="item in files">
+                <a href=""><img ng-src="{{item}}"></a>
+            </li>
+        </ul>
+
+
+    </div>
 
 
 </body>
